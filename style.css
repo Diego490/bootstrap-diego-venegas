@@ -12,13 +12,15 @@
 /*second column email section */
 .email-text-column{
     background-color: rgb(84, 121, 199);
-}
+margin:10px;}
+
 
 .email-text-column:hover{
     background-color: rgb(118, 166, 213);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.logo{max-width:50px; border-radius: 50%;}
 
 .logo-image{
     border-radius: 50%;

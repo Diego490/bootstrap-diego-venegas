@@ -1,221 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>diego-bootstrap</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>diego-bootstrap</title>
 
-    <!-- bootstrap icon link -->
-    <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    
-     <!-- FONT AWESOME ICON LINK -->
-    <script src="https://kit.fontawesome.com/49dee0ce50.js" crossorigin="anonymous"></script>
-   
-    <!--style.css sheet link-->
-    <link rel="stylesheet" href="style.css">
+		<!-- bootstrap icon link -->
+		<!-- Option 1: Include in HTML -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
 
-    
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-   
- <!--Navbar and container holding parts inside navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
+		<!-- FONT AWESOME ICON LINK -->
+		<script
+			src="https://kit.fontawesome.com/49dee0ce50.js"
+			crossorigin="anonymous"
+		></script>
 
-  </div>
-</nav>
+		<!--style.css sheet link-->
+		<link rel="stylesheet" href="style.css" />
 
-<!--Icon logo positioned left of the navbar-->
+		<!-- Bootstrap CSS CDN -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--Navbar and container holding parts inside navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container-fluid">
+				<i
+					data-bs-toggle="offcanvas"
+					href="#offcanvasExample"
+					role="button"
+					aria-controls="offcanvasExample"
+				>
+					<img src="./AdobeStock_281209522.jpeg" class="logo" />
+				</i>
+				<input
+					class="form-control me-2 d-none d-sm-block 5 ms-lg-5 rounded-5"
+					type="search"
+					placeholder="Search"
+					aria-label="Search"
+				/>
+				<button
+					class="btn btn-secondary d-none d-sm-block w-50 rounded-5"
+					type="submit"
+				>
+					<i class="fa-solid fa-magnifying-glass"></i> Search
+				</button>
+			</div>
+		</nav>
 
-<div class="d-lg-none d-xl-none user-logo"></div>
-  <i class="fa-solid fa-circle-user fa-2xl"data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
- </i>
-  
-<!--Account Region-->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">diego venegas </h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  
-  <div class="offcanvas-body">
-    <div class="d-flex flex-column justify-content-between" id="account-section-area">
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-user me-2"></i> Account</button>
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-person me-2"></i> Personal details</button>
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-lock me-2"></i> Password and security</button>
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-gear me-2"></i> Setting</button>
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-question me-2"></i> Help</button>
-      <button class="btn btn-outline-secondary"><i class="fa-solid fa-right-from-bracket me-2"></i> Sign-out</button>
+		<!--Icon logo positioned left of the navbar-->
 
-    </div>
-      <div class="dropdown mt-3">
-     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"><i class="fa-solid fa-user-plus"></i> 
-                        Manage accounts
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Account-1</a></li>
-                        <li><a class="dropdown-item" href="#">Account-2</a></li>
-                        <li><a class="dropdown-item" href="#">Account-3</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-          </div>
+		<!--Account Region-->
+		<div
+			class="offcanvas offcanvas-start"
+			tabindex="-1"
+			id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel"
+		>
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					diego venegas
+				</h5>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
 
-       
+			<div class="offcanvas-body">
+				<div
+					class="d-flex flex-column justify-content-between"
+					id="account-section-area"
+				>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-user me-2"></i> Account
+					</button>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-person me-2"></i> Personal details
+					</button>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-lock me-2"></i> Password and security
+					</button>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-gear me-2"></i> Setting
+					</button>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-question me-2"></i> Help
+					</button>
+					<button class="btn btn-outline-secondary">
+						<i class="fa-solid fa-right-from-bracket me-2"></i> Sign-out
+					</button>
+				</div>
+				<div class="dropdown mt-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						id="dropdownMenuButton"
+						data-bs-toggle="dropdown"
+					>
+						<i class="fa-solid fa-user-plus"></i>
+						Manage accounts
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li><a class="dropdown-item" href="#">Account-1</a></li>
+						<li><a class="dropdown-item" href="#">Account-2</a></li>
+						<li><a class="dropdown-item" href="#">Account-3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-<!--Icon region and navigation-bar -->
+		<!--Icon region and navigation-bar -->
 
-<img src="AdobeStock_281209522.jpeg" class="logo-image navbar-brand ms-4" style="max-width: 100px; height: auto;">
-<form class="d-flex center-search-bar me-auto ms-auto">
-  <input class="form-control me-2 d-none d-sm-block 5 ms-lg-5 rounded-5" type="search" placeholder="Search" aria-label="Search">
-  <button class="btn btn-outline-secondary d-none d-sm-block w-50 rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+		<form class="d-flex center-search-bar me-auto ms-auto">
+			<button
+				class="btn btn-outline-secondary me-auto d-block d-sm-none d-md-none d-lg-none d-xl-none rounded-5"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasTop"
+				aria-controls="offcanvasTop"
+			>
+				Search
+			</button>
 
-  <button class="btn btn-outline-secondary me-auto d-block d-sm-none d-md-none d-lg-none d-xl-none rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Search</button>
+			<div
+				class="offcanvas offcanvas-top bg-light"
+				tabindex="-1"
+				id="offcanvasTop"
+				aria-labelledby="offcanvasTopLabel"
+			>
+				<div class="offcanvas-header d-flex justify-content-end">
+					<button
+						type="button"
+						class="btn-close text-reset d-lg-none"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
 
-      <div class="offcanvas offcanvas-top bg-light" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header d-flex justify-content-end">
+				<div class="w-100 d-block d-sm-none d-md-none d-lg-none d-xl-none">
+					<nav class="navbar navbar-light bg-light">
+						<div class="container-fluid">
+							<form class="d-flex">
+								<input
+									class="form-control me-2 rounded-5"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+								<button
+									class="btn btn-outline-secondary m-2 ms-auto me-auto w-50 rounded-5 mt-3"
+									type="submit"
+								>
+									<i class="fa-solid fa-magnifying-glass"></i> Search
+								</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</form>
 
-          <button type="button" class="btn-close text-reset d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>  
-        
-        <div class="w-100 d-block d-sm-none d-md-none d-lg-none d-xl-none">
-          <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <form class="d-flex">
-                <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary m-2 ms-auto me-auto w-50 rounded-5 mt-3" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-              </form>
-            </div>
-          </nav>
-        </div>                
-      </div>
-      
-</form>
+		<!--dropdown hamburger's buttons-->
+		<div class="d-lg-none d-xl-none me-2">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasScrolling"
+				aria-controls="offcanvasScrolling"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
+			<div
+				class="offcanvas offcanvas-start"
+				data-bs-scroll="true"
+				data-bs-backdrop="false"
+				tabindex="-1"
+				id="offcanvasScrolling"
+				aria-labelledby="offcanvasScrollingLabel"
+			>
+				<div class="offcanvas-header">
+					<button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+				<div
+					class="offcanvas-body d-flex flex-column align-items-center d-grid gap-3"
+				>
+					<button class="btn btn-outline-secondary m-1 rounded-5 w-50">
+						<i class="fa-solid fa-message me-2"></i> Primary
+					</button>
+					<button class="btn btn-outline-secondary m-1 rounded-5 w-50">
+						<i class="fa-solid fa-file-shield me-2"></i> Important
+					</button>
+					<button class="btn btn-outline-secondary m-1 rounded-5 w-50">
+						<i class="fa-solid fa-paper-plane me-2"></i> Sent
+					</button>
+					<button class="btn btn-outline-secondary m-1 rounded-5 w-50">
+						<i class="fa-solid fa-file me-2"></i> Drafts
+					</button>
+					<button class="btn btn-outline-secondary m-1 rounded-5 w-50">
+						<i class="fa-solid fa-trash-can me-2"></i> Trash
+					</button>
+				</div>
+			</div>
+		</div>
 
-<!--dropdown hamburger's buttons-->
-<div class="d-lg-none d-xl-none me-2">
-  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		<!--col-1 for lg screen-->
+		<div class="row h-100 overflow-hidden">
+			<div
+				class="col-lg-3 p-0 d-none d-lg-block d-xl-block bg-light opacity-100"
+			>
+				<div
+					class="mt-5 d-flex flex-column justify-content-start align-items-center gap-2"
+				>
+					<style>
+						.btn-outline-secondary.custom-outline {
+							color: #0d6efd; /* Text color */
+							border-color: #0d6efd; /* Outline color */
+						}
 
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body d-flex flex-column align-items-center d-grid gap-3">
-      <button class="btn btn-outline-secondary m-1 rounded-5 w-50"><i class="fa-solid fa-message me-2"></i> Primary</button>
-      <button class="btn btn-outline-secondary m-1 rounded-5 w-50"><i class="fa-solid fa-file-shield me-2"></i> Important</button>
-      <button class="btn btn-outline-secondary m-1 rounded-5 w-50"><i class="fa-solid fa-paper-plane me-2"></i> Sent</button>
-      <button class="btn btn-outline-secondary m-1 rounded-5 w-50"><i class="fa-solid fa-file me-2"></i> Drafts</button>
-      <button class="btn btn-outline-secondary m-1 rounded-5 w-50"><i class="fa-solid fa-trash-can me-2"></i> Trash</button>
-    </div>
-  </div>
-</div>       
-</div>
-</nav>
+						.btn-outline-secondary.custom-outline:hover {
+							color: #fff; /* Text color on hover */
+							background-color: #0d6efd; /* Background color on hover */
+						}
+					</style>
 
-<!--col-1 for lg screen-->
-<div class="row h-100 overflow-hidden">
-  <div class="col-lg-3 p-0 d-none d-lg-block d-xl-block bg-light opacity-100">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-inbox me-2"></i> Inbox
+					</button>
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-star me-2"></i> Started
+					</button>
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-file me-2"></i> Drafts
+					</button>
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-envelope-circle-check me-2"></i> Sent
+					</button>
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-users me-2"></i> Social
+					</button>
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+						<i class="fa-solid fa-trash-can me-2"></i> Trash
+					</button>
+				</div>
+			</div>
 
-      <div class="mt-5 d-flex flex-column justify-content-start align-items-center gap-2 ">
-       <style>
-  .btn-outline-secondary.custom-outline {
-    color: #0d6efd; /* Text color */
-    border-color: #0d6efd; /* Outline color */
-  }
-  
-  .btn-outline-secondary.custom-outline:hover {
-    color: #fff; /* Text color on hover */
-    background-color: #0d6efd; /* Background color on hover */
-  }
-</style>
+			<!--col-2 where all the emails are-->
 
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-inbox me-2"></i> Inbox</button>
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-star me-2"></i> Started</button>
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-file me-2"></i> Drafts</button>
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-envelope-circle-check me-2"></i> Sent</button>
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-users me-2"></i> Social</button>
-<button class="btn btn-outline-secondary custom-outline w-50 m-1"><i class="fa-solid fa-trash-can me-2"></i> Trash</button>
+			<div
+				class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar"
+				id="col-2-email-section"
+			>
+				<div class="m-3 mt-0 remove-scrollbar">
+					<!--code for all the email used in col-2-->
+					<style>
+						.email-text-column {
+							border-radius: 0; /* Remove rounded corners */
+							transition: box-shadow 0.3s; /* Add transition for smooth hover effect */
+						}
 
-      </div>
-      </div>
+						.email-text-column:hover {
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+						}
+					</style>
 
-      <!--col-2 where all the emails are-->
-          
-      <div class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar" id="col-2-email-section">
-            
-        <div class="m-3 mt-0 remove-scrollbar" >
+					<div
+						class="row row-cols-1 h-100-grid gap-3 text-white opacity-100 overflow-x-hidden"
+					>
+					<div class="col mt-3">
+							<div class="h-100 text-dark p-2 email-text-column">
+								Google Classroom <br />
+								confirm your email to have access <br />
+								Managing projects and teammates is crucial for successful
+								collaboration and achieving goals effectively.
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							Youtube <br />
+							We are thrilled to introduce you to the world of YouTube, the
+							ultimate platform for unlocking your brand's marketing potential.
+							With over 2 billion active users, YouTube offers an unparalleled
+							opportunity to reach your target audience and drive engagement
+							like never before..
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							Ask Jeeves <br />
+							Exciting to announce were back after after our breach. We
+							apologize for any inconvenience
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							Bootstrap <br />
+							Welcome Diego<br />
+							Bootstrap is a free and open-source CSS framework directed at
+							responsive, mobile-first front-end web development..........
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							VsCode<br />
+							Visual Studio Code, also commonly referred to as VS Code, is a
+							source-code editor made by Microsoft with the Electron Framework,
+							for Windows, Linux and macOS.
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							GitHub Alerts <br />
+							Find out how to set up your github account.....
+						</div>
+					</div>
+					<div class="col">
+						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+							Google Classroom <br />
+							Update: "Git Configuration and set up left to do…"
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-         <!--code for all the email used in col-2-->
-         <style>
-          .email-text-column {
-            border-radius: 0; /* Remove rounded corners */
-            transition: box-shadow 0.3s; /* Add transition for smooth hover effect */
-          }
-          
-          .email-text-column:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
-          }
-        </style>
-        
-        <div class="row row-cols-1 h-100-grid gap-3 text-white opacity-100 overflow-x-hidden">
-          <div class="col mt-3">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-              Google Classroom <br> confirm your email to have access <br> Managing projects and teammates is crucial for successful collaboration and achieving goals effectively. 
-            </div>
-          </div>
-         
-        
-
-
-          </div>
-          <div class="col">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-                Youtube <br> We are thrilled to introduce you to the world of YouTube, the ultimate platform for unlocking your brand's marketing potential. With over 2 billion active users, YouTube offers an unparalleled opportunity to reach your target audience and drive engagement like never before..
-            </div>
-          </div>
-          <div class="col">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-              Ask Jeeves <br> Exciting to announce were back after after our breach. We apologize for any inconvenience
-            </div>
-          </div>
-          <div class="col">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-                Bootstrap <br> Welcome Diego<br> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development..........
-            </div>
-            </div>
-          <div class="col">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-VsCode<br> Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.
-            </div>
-          </div>
-          <div class="col">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-                GitHub Alerts <br> Find out how to set up your github account.....
-            </div>
-          </div>
-          <div class="col ">
-            <div class="rounded-3 h-100 text-dark p-2 email-text-column">
-                Google Classroom <br> Update: "Git Configuration and set up left to do…"
-            </div>
-          </div> 
-        </div>
-    </div>
-</div>
-
-   <!--Bootstrap JS CDN-->  
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+		<!--Bootstrap JS CDN-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

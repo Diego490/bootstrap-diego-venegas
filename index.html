@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!--required meta tags-->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +21,7 @@
 		></script>
 
 		<!--style.css sheet link-->
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css"/>
 
 		<!-- Bootstrap CSS CDN -->
 		<link
@@ -32,7 +33,8 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<!--Navbar and container holding parts inside navbar -->
+
+		<!--Navbar and container holding all columns inside navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div class="container-fluid">
 				<i
@@ -41,16 +43,16 @@
 					role="button"
 					aria-controls="offcanvasExample"
 				>
-					<img src="./AdobeStock_281209522.jpeg" class="logo" />
+					<i class="fa-brands fa-github"></i>
 				</i>
 				<input
-					class="form-control me-2 d-none d-sm-block 5 ms-lg-5 rounded-5"
+					class="form-control me-2 d-none d-sm-block 5 ms-lg-5 rounded-10"
 					type="search"
 					placeholder="Search"
 					aria-label="Search"
 				/>
 				<button
-					class="btn btn-secondary d-none d-sm-block w-50 rounded-5"
+					class="btn btn-secondary d-none d-sm-block w-50 rounded-10"
 					type="submit"
 				>
 					<i class="fa-solid fa-magnifying-glass"></i> Search
@@ -84,23 +86,23 @@
 					class="d-flex flex-column justify-content-between"
 					id="account-section-area"
 				>
-					<button class="btn btn-outline-secondary">
-						<i class="fa-solid fa-user me-2"></i> Account
+					<button class="btn btn-outline-primary rounded-pill">
+						<i class="fa-solid fa-user-tie me-2"></i> User
 					</button>
-					<button class="btn btn-outline-secondary">
-						<i class="fa-solid fa-person me-2"></i> Personal details
+					<button class="btn btn-outline-primary rounded-pill">
+						<i class="fa-solid fa-person-shelter me-2"></i> Personal Info
 					</button>
-					<button class="btn btn-outline-secondary">
+					<button class="btn btn-outline-primary rounded-pill">
 						<i class="fa-solid fa-lock me-2"></i> Password and security
 					</button>
-					<button class="btn btn-outline-secondary">
-						<i class="fa-solid fa-gear me-2"></i> Setting
+					<button class="btn btn-outline-primary rounded-pill">
+						<i class="fa-solid fa-gears me-2"></i> Setting
 					</button>
-					<button class="btn btn-outline-secondary">
-						<i class="fa-solid fa-question me-2"></i> Help
+					<button class="btn btn-outline-primary rounded-pill">
+						<i class="fa-solid fa-circle-question me-2"></i> Help
 					</button>
-					<button class="btn btn-outline-secondary">
-						<i class="fa-solid fa-right-from-bracket me-2"></i> Sign-out
+					<button class="btn btn-outline-primary rounded-pill">
+						<i class="fa-solid fa-right-from-bracket me-2"></i> Exit
 					</button>
 				</div>
 				<div class="dropdown mt-3">
@@ -232,9 +234,10 @@
 					class="mt-5 d-flex flex-column justify-content-start align-items-center gap-2"
 				>
 					<style>
+
 						.btn-outline-secondary.custom-outline {
 							color: #0d6efd; /* Text color */
-							border-color: #0d6efd; /* Outline color */
+							border-color: #4a5ac5; /* Outline color */
 						}
 
 						.btn-outline-secondary.custom-outline:hover {
@@ -243,60 +246,88 @@
 						}
 					</style>
 
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button type="button" class="btn btn-primary position-relative">
+						Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+					  </button>
+
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-inbox me-2"></i> Inbox
 					</button>
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-star me-2"></i> Started
 					</button>
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-file me-2"></i> Drafts
 					</button>
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-envelope-circle-check me-2"></i> Sent
 					</button>
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-users me-2"></i> Social
 					</button>
-					<button class="btn btn-outline-secondary custom-outline w-50 m-1">
+					<button class="btn btn-outline-secondary custom-outline w-50 m-1 rounded-pill">
 						<i class="fa-solid fa-trash-can me-2"></i> Trash
 					</button>
 				</div>
 			</div>
 
 			<!--col-2 where all the emails are-->
+			
 
-			<div
-				class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar"
-				id="col-2-email-section"
-			>
-				<div class="m-3 mt-0 remove-scrollbar">
-					<!--code for all the email used in col-2-->
-					<style>
-						.email-text-column {
-							border-radius: 0; /* Remove rounded corners */
-							transition: box-shadow 0.3s; /* Add transition for smooth hover effect */
-						}
+			
+			<div class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar"
+			id="col-2-email-section">
 
-						.email-text-column:hover {
+			
+			<div class="m-3 mt-0 remove-scrollbar">
+				<!--code for all the email used in col-2-->
+				
+				<style>
+					.email-text-column {
+						border-radius: 0; /* Remove rounded corners */
+						transition: box-shadow 0.3s; /* Add transition for smooth hover effect */
+					}
+					
+					.email-text-column:hover {
 							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
 						}
 					</style>
 
 					<div
-						class="row row-cols-1 h-100-grid gap-3 text-white opacity-100 overflow-x-hidden"
+						class="row row-cols-1 h-100-grid gap-3 text-white opacity-1 overflow-x-hidden"
 					>
 					<div class="col mt-3">
 							<div class="h-100 text-dark p-2 email-text-column">
-								Google Classroom <br />
+								<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst1" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Feb 13</span>
+							</div>
+							 Google Classroom <br />
 								confirm your email to have access <br />
 								Managing projects and teammates is crucial for successful
 								collaboration and achieving goals effectively.
 							</div>
 						</div>
-					</div>
+					
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+						<!-- Paper clip and Date -->
+						<div class="d-flex justify-content-end">
+							<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+							<span class="text-muted font-light">Mar 10</span>
+						</div>
+
 							Youtube <br />
 							We are thrilled to introduce you to the world of YouTube, the
 							ultimate platform for unlocking your brand's marketing potential.
@@ -306,14 +337,34 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst2" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Mar 10</span>
+							</div>
 							Ask Jeeves <br />
 							Exciting to announce were back after after our breach. We
 							apologize for any inconvenience
 						</div>
 					</div>
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cs2" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Mar 24</span>
+							</div>
 							Bootstrap <br />
 							Welcome Diego<br />
 							Bootstrap is a free and open-source CSS framework directed at
@@ -321,7 +372,17 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst3" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Mar 26</span>
+							</div>
 							VsCode<br />
 							Visual Studio Code, also commonly referred to as VS Code, is a
 							source-code editor made by Microsoft with the Electron Framework,
@@ -329,13 +390,33 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst5" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Mar 29</span>
+							</div>
 							GitHub Alerts <br />
 							Find out how to set up your github account.....
 						</div>
 					</div>
 					<div class="col">
-						<div class="rounded-3 h-100 text-dark p-2 email-text-column">
+						<div class="h-100 text-dark p-2 email-text-column">
+							<!--checkbox-->
+							<div class="custom-control custom-checkbox d-flex justify-content-start">
+								<input type="checkbox" class="custom-control-input" id="cst4" />
+								<label class="custom-control-label" for="cst1"></label>
+							</div>
+							<!-- Paper clip and Date -->
+							<div class="d-flex justify-content-end">
+								<span><i class="fa fa-paperclip text-muted me-1"></i></span>
+								<span class="text-muted font-light">Mar 30</span>
+							</div>
 							Google Classroom <br />
 							Update: "Git Configuration and set up left to do…"
 						</div>
@@ -343,6 +424,46 @@
 				</div>
 			</div>
 		</div>
+		
+
+		 <!--NEW col-3 read emails div-->
+		
+		 <div class="h-100 p-0 .col-sm-7 col-sm-5 d-none d-md-block d-lg-block">
+			 
+			 <div class="bg-light w-80 m-4 mb-0 rounded-5" id="col-3-opened-email-div">
+				 <div class="row h-75 d-inline-block ">
+					 <br class="col-11 m-4 fs-5" >
+					 <div class="col-11 m-4 fs-5">
+						 <b>Email that is currently opened</b>
+						 <br><br> 
+						 <div class="header d-flex justify-content-between">
+							<div class="from">
+							  <span>Diego Venegas</span>
+							  Diego@bootstrapmaster.com
+							</div>
+							<div class="date">Today, <b>3:47 PM</b></div>
+						  </div>
+						 Sup Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, impedit nam facere repellendus dignissimos illo fugiat recusandae rerum eveniet porro voluptatibus odio totam dolorum sint magnam quam laboriosam itaque ad.
+					 </div>
+
+
+
+                <!--col-3 reply div-->
+				
+				<form method="post" action="">
+					<div class="form-group">
+					  <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+					</div>
+					<div class="form-group">
+						  <!--the sent button on col-3-->
+					  <button tabindex="3" type="submit" class="btn btn-success">Send message</button>
+					</div>
+				  </form>
+				</div>
+			</div>
+			</div>
+
+    
 
 		<!--Bootstrap JS CDN-->
 		<script

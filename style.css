@@ -1,15 +1,15 @@
-/* for seconde column to control the overflow*/
+/* Directed to seconde column to manage overflow*/
 
 .remove-scrollbar::-webkit-scrollbar {
     display:none;
 }
-
+<!-- Scrollbar-->
 .remove-scrollbar{
     max-height: calc(100vh - 50px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
-/*second column email section */
+/* second column email directory */
 .email-text-column{
     background-color: rgb(190, 206, 239);
 margin:10px;}
@@ -27,19 +27,19 @@ margin:10px;}
     width:50px;
 }
 
-/*compose off canvas send buttton */
+/*Hidden off-canvas sending buttton */
 .sent-massage{
     height: 200px;
 }
 
-/*nav-bar*/
-.nav-contaner{
+/*Navigation Bar*/
+.nav-container{
     width: calc(100% + 10px);
 }
 
-/*user offcanvas account section*/
+/*Account holder of-canvas info section*/
 #offcanvasExample{
-   width: 300px;
+   width: 301px;
 }
 
 #account-section-area{
@@ -72,5 +72,9 @@ body{
 }
 
 .user-logo{
-    font-size: 22px;
+    font-size: 21px;
+}
+
+.default-email{
+    background-color: rgb(118, 166, 213);
 }

@@ -1,80 +1,81 @@
 /* Directed to seconde column to manage overflow*/
 
 .remove-scrollbar::-webkit-scrollbar {
-    display:none;
+	display: none;
 }
-<!-- Scrollbar-->
-.remove-scrollbar{
-    max-height: calc(100vh - 50px);
-    overflow-y: scroll;
-    overflow-x: hidden;
+<!-- Scrollbar-- > .remove-scrollbar {
+	max-height: calc(100vh - 50px);
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 /* second column email directory */
-.email-text-column{
-    background-color: rgb(190, 206, 239);
-margin:10px;}
-
-
-.email-text-column:hover{
-    background-color: rgb(118, 166, 213);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.email-text-column {
+	background-color: rgb(190, 206, 239);
+	margin: 10px;
 }
 
-.logo{max-width:50px; border-radius: 50%;}
+.email-text-column:hover {
+	background-color: rgb(118, 166, 213);
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
-.logo-image{
-    border-radius: 50%;
-    width:50px;
+.logo {
+	max-width: 50px;
+	border-radius: 50%;
+}
+
+.logo-image {
+	border-radius: 50%;
+	width: 50px;
 }
 
 /*Hidden off-canvas sending buttton */
-.sent-massage{
-    height: 200px;
+.sent-massage {
+	height: 200px;
 }
 
 /*Navigation Bar*/
-.nav-container{
-    width: calc(100% + 10px);
+.nav-container {
+	width: calc(100% + 10px);
 }
 
 /*Account holder of-canvas info section*/
-#offcanvasExample{
-   width: 301px;
+#offcanvasExample {
+	width: 301px;
 }
 
-#account-section-area{
-    height: 350px;
+#account-section-area {
+	height: 350px;
 }
 
-#offcanvasScrolling{
-    width: 300px
+#offcanvasScrolling {
+	width: 300px;
 }
 
-#col-2-email-section{
-    background-color: rgb(224, 225, 241);
+#col-2-email-section {
+	background-color: rgb(224, 225, 241);
 }
 
-
-#col-3-opened-email-div{
-    height: 380px;
+#col-3-opened-email-div {
+	height: 380px;
 }
 
-#col-3-reply-email-div{
-   height: 300px;
+#col-3-reply-email-div {
+	height: 300px;
 }
 
-#replay-textarea{
-    height: 170px;
+#replay-textarea {
+	height: 170px;
 }
 
-body{
-    overflow-x: hidden;
+body {
+	overflow-x: hidden;
 }
 
-.user-logo{
-    font-size: 21px;
+.user-logo {
+	font-size: 21px;
 }
 
-.default-email{
-    background-color: rgb(118, 166, 213);
+.default-email {
+	background-color: rgb(118, 166, 213);
 }
